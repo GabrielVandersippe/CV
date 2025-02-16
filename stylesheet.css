@@ -6,6 +6,8 @@ h1.header {
 
 h2 {
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -22,6 +24,10 @@ div.Education {
     grid-area: edu;
 }
 
+div.Skills {
+    grid-area: skills;
+}
+
 ol {
     list-style:square;
     font-style: oblique;
@@ -35,5 +41,5 @@ div.container {
         1fr 1fr;
     grid-template-areas:
         "exp   edu"
-        "sthg   sthg2";
+        "skills   sthg2";
 }
