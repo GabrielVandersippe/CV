@@ -1,0 +1,39 @@
+h1.header {
+    font-weight: bolder;
+    justify-content: center;
+    display: flex;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+body {
+    font-family : Ubuntu;
+    background-color: azure;
+    color : rgb(63, 63, 118);
+}
+
+div.Experience {
+    grid-area: exp;
+}
+
+div.Education {
+    grid-area: edu;
+}
+
+ol {
+    list-style:square;
+    font-style: oblique;
+}
+
+div.container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-template-columns:
+        1fr 1fr;
+    grid-template-areas:
+        "exp   edu"
+        "sthg   sthg2";
+}
