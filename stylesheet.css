@@ -2,6 +2,9 @@ h1.header {
     font-weight: bolder;
     justify-content: center;
     display: flex;
+    padding: 30pt;
+    border-radius: 30pt;
+    background-color:rgba(132, 122, 197, 0.523);
 }
 
 h2 {
@@ -12,20 +15,39 @@ h2 {
 
 body {
     font-family : Ubuntu;
-    background-color: azure;
-    color : rgb(63, 63, 118);
+    background-image: url("./Croissants.jpg");
 }
 
 div.Experience {
     grid-area: exp;
+    margin: 10pt 40pt;
+    padding: 10pt;
+    border-radius: 30pt;
+    background-color:rgba(191, 184, 238, 0.443);
 }
 
 div.Education {
     grid-area: edu;
+    margin: 10pt 40pt;
+    padding: 10pt;
+    border-radius: 30pt;
+    background-color:rgba(191, 184, 238, 0.443);
 }
 
 div.Skills {
     grid-area: skills;
+    margin: 10pt 40pt;
+    padding: 10pt;
+    border-radius: 30pt;
+    background-color:rgba(191, 184, 238, 0.443);
+}
+
+div.Languages {
+    grid-area: lang;
+    margin: 10pt 40pt;
+    padding: 10pt;
+    border-radius: 30pt;
+    background-color:rgba(191, 184, 238, 0.443);
 }
 
 ol {
@@ -41,5 +63,5 @@ div.container {
         1fr 1fr;
     grid-template-areas:
         "exp   edu"
-        "skills   sthg2";
+        "skills   lang";
 }
