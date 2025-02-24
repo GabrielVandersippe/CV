@@ -1,0 +1,131 @@
+:root {
+  font-family : Ubuntu;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(19, 14, 14, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  /* margin: 5em; */
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url("../public/Croissants.jpg");
+}
+
+h2{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+h1.header {
+  font-weight: bolder;
+  justify-content: center;
+  display: flex;
+  padding: 30pt;
+  border-radius: 30pt;
+  background-color:rgba(132, 122, 197, 0.523);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+div#exp {
+  grid-area: exp;
+  margin: 10pt 40pt;
+  padding: 10pt;
+  border-radius: 30pt;
+  background-color:rgba(191, 184, 238, 0.443);
+}
+
+div.Education {
+  grid-area: edu;
+  margin: 10pt 40pt;
+  padding: 10pt;
+  border-radius: 30pt;
+  background-color:rgba(191, 184, 238, 0.443);
+}
+
+div.Skills {
+  grid-area: skills;
+  margin: 10pt 40pt;
+  padding: 10pt;
+  border-radius: 30pt;
+  background-color:rgba(191, 184, 238, 0.443);
+}
+
+div.Languages {
+  grid-area: lang;
+  margin: 10pt 40pt;
+  padding: 10pt;
+  border-radius: 30pt;
+  background-color:rgba(191, 184, 238, 0.443);
+}
+
+ol {
+  list-style:square;
+  font-style: oblique;
+}
+
+div.container {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  grid-template-columns:
+      1fr 1fr;
+  grid-template-areas:
+      "exp   edu"
+      "skills   lang";
+}
